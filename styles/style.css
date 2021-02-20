@@ -78,8 +78,7 @@ body {
 
 #screen .bottom .circle {
   display: flex;
-  height: 1.3rem;
-  width: 1.3rem;
+  padding: 0.2rem;
   border-radius: 50%;
   border-style: solid;
   border-width: 0.2rem;
@@ -96,10 +95,15 @@ body {
 
 #screen .bottom .camera {
   display: flex;
-  height: 1.4rem;
-  width: 1.7rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+#screen .bottom .camera .bg-camera {
+  display: flex;
+  padding: 0.3rem 0.5rem;
   background-color: #ffffff55;
-  border-radius: 0.2rem;
+  border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
 }
 
 #screen .bottom .camera .camera-lens {
@@ -108,7 +112,13 @@ body {
   width: 0.7rem;
   align-items: center;
   border-radius: 50%;
-  border-style: solid;
-  border-width: 0.1rem;
-  border-color: black;
+  border: black solid 0.1rem;
+}
+
+#screen .bottom .camera-flash {
+  border-bottom: 2px solid #ffffff55;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  height: 0;
+  width: 0.6rem;
 }
